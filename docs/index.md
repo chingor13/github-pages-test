@@ -1,6 +1,5 @@
 ---
 title: Google HTTP Client Library for Java
-layout: post
 ---
 
 ## Description
