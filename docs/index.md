@@ -1,5 +1,6 @@
 ---
 title: Google HTTP Client Library for Java
+layout: page-with-navigation
 ---
 
 ## Description
