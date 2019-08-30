@@ -2,9 +2,12 @@
 title: Setup
 ---
 
+# Setup Instructions
+
 You can download the Google HTTP Client Library for Java and its dependencies in a zip file, or you can use a dependency manager such as Maven or gradle to install the necessary jars from the Maven Central repository.
 
 ## Maven
+
 The Google HTTP Client Library for Java is in the central Maven repository. The Maven `groupId` for all artifacts for this library is `com.google.http-client`.
 
 To ensure all dependency versions work together and to avoid having to manually choose and specify versions for each dependency, we recommend first importing the `com.google.cloud:libraries-bom` in the `dependencyManagement` section of your `pom.xml`:

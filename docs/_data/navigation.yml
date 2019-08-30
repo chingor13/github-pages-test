@@ -1,6 +1,6 @@
 toc:
   - page: Home
-    url: /
+    url: ./
   - page: Setup Instructions
     url: setup.html
   - page: Component Modules
