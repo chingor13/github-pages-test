@@ -3,6 +3,7 @@ title: Google HTTP Client Library for Java
 ---
 
 ## Description
+
 Written by Google, the Google HTTP Client Library for Java is a flexible, efficient, and powerful
 Java library for accessing any resource on the web via HTTP. The library has the following
 features:
