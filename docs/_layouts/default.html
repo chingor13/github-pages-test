@@ -16,11 +16,11 @@
     <div class="wrapper">
       <header>
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
 
         {% for entry in site.data.navigation.toc %}
           <a href="{{ entry.url }}">{{ entry.page }}</a><br/>
         {% endfor %}
+        <br/>
 
         <ul>
           {% if site.show_downloads %}
@@ -29,25 +29,13 @@
           {% endif %}
           <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
         </ul>
-
-        {% if site.github.is_project_page %}
-          <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
-        {% endif %}
       </header>
 
       <section>
         {{ content }}
-      </section>
 
-      <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+      </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}
