@@ -19,12 +19,10 @@
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
 
         {% for item in site.data.navigation.toc %}
-            <h3>{{ item.title }}</h3>
-            <ul>
-                {% for entry in item.subfolderitems %}
-                <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
-                {% endfor %}
-            </ul>
+          <h3>{{ item.title }}</h3>
+          {% for entry in item.subfolderitems %}
+          <a href="{{ entry.url }}">{{ entry.page }}</a>
+          {% endfor %}
         {% endfor %}
 
         <ul>
