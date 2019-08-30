@@ -18,7 +18,7 @@
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
 
-        {% for item in site.data.samplelist.toc %}
+        {% for item in site.data.navigation.toc %}
             <h3>{{ item.title }}</h3>
             <ul>
                 {% for entry in item.subfolderitems %}
